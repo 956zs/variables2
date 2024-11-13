@@ -4,6 +4,9 @@ fn main() {
     let y: f32 = 3.0; // f32
 
     //IEEE-754 f32-> 單精度 f64->雙精度
+    println!("{x} {y}");
+    println!("{} {}", x, y);
+    main2();
 }
 
 fn main2() {
@@ -17,4 +20,9 @@ fn main2() {
     let truncated = -5 / 3; //  -1
 
     let remainder = 43 % 5;
+
+    println!(
+        "sum: {}\ndifference: {}\nproduct: {}\nquotient: {}\ntruncated: {}\nremainder: {}",
+        sum, difference, product, quotient, truncated, remainder
+    );
 }
